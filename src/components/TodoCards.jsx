@@ -47,7 +47,7 @@ function TodoCards({ data ,setRender}) {
                     <button className='btn btn-dark border border-0 w-100 mb-1 'onClick={()=>updTask(data._id,data)} ><i class="  fa-regular fa-calendar-check text-success fa-xl"></i></button>
                 </Col>
                 <Col sm={6}>
-                    <button className='btn btn-dark border border-0 w-100  mb-1 ' onClick={()=>delTodo(data._id)}><i class="fa-solid fa-calendar-minus text-danger fa-xl"></i></button>
+                    <button className='btn btn-dark border border-0 w-100  mb-1 ' onClick={()=>delTodo(data._id)}><span className='me-2'>Completed</span><i class="fa-solid fa-calendar-minus text-danger fa-xl"></i></button>
                 </Col>
                 </Row>
                 :<Row className='d-flex justify-content-center align-items-center   p-4' >
