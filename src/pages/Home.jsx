@@ -18,12 +18,10 @@ function Home() {
         setLoading(true)
         getAllTodo().then(res => {
             setTodos(res.data)
-            console.log(res.data)
             setLoading(false)
 
         })
             .catch(err => {
-                console.log(err)
                 setLoading(false)
 
             })
